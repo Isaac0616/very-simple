@@ -33,7 +33,7 @@ $break-level-5: 980px;
     box-sizing: border-box;
     margin: auto;
     width: 100%;
-    max-width: 720px;
+    max-width: 800px;
 
     @media only screen and (max-width: $break-level-5) {
         max-width: 680px;
@@ -366,7 +366,7 @@ $post-time-space: 1em;
             color: #666;
 
             &::after {
-                background: #A1EFE9;
+                background: #aaa;
             }
         }
     }
@@ -374,6 +374,7 @@ $post-time-space: 1em;
     .post-desc {
         flex: 1;
         //padding-left: calc(1rem + #{$vertical-bar-width});
+        max-width: 100%;
 
 
         // style for post-title
@@ -578,7 +579,6 @@ footer#footer {
     display: flex;
     box-shadow: 0 0 2px 1px rgba(200, 200, 200, 0.8);
     transition: background-color .2s ease-in-out;
-    margin-bottom: 2em;
 
     // show full width on small screen
     @media only screen and (max-width: $break-level-2) {
@@ -698,6 +698,9 @@ article {
         margin: 1em 0;
         padding: 0 $article-padding;
         border-left: 5px solid $color-underscore;
+         background: #eee;
+         line-height: 2em;
+         word-wrap: break-word;
 
         // block footer
         footer {
@@ -757,7 +760,7 @@ article {
 
     // cancel dangling list for the first level
     ol, ul {
-        padding-left: 0;
+        padding-left: 20px;
         ol, ul {
             padding-left: 40px;
         }
@@ -771,9 +774,11 @@ article {
 
     // inline code
     code {
-        border: 1px solid #BBB;
-        background: #EEE;
-        font-size: 14px;
+         border-radius: 3px;
+         background: #eee;
+         font-family: monaco, Consolas, "Lucida Console", monospace;
+         font-size: 85%;
+         padding: 0.2em;
     }
 
     // table
@@ -787,6 +792,7 @@ article {
             text-align: left;
             background: #333;
             color: #EEE;
+            font-weight: normal;
         }
 
         th, td {

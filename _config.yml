@@ -3,12 +3,13 @@ menu:
   ## If your site is put in a subdirectory, set Home as '/child/'
   Home: /
   Archives: archives
+  About: about
 
 social:
-  email:
+  email: i@poning.me
   twitter:
   weibo:
-  github:
+  github: Isaac0616
   googleplus:
   rss: /atom.xml
 
@@ -16,6 +17,6 @@ social:
 fancybox: true # set to true if you want to use it
 
 duoshuo: #duoshuo_shortname
-disqus: #disqus _shortname
-google_analytics: #Google Analytics Tracking Code
+disqus: poning
+google_analytics: UA-86477289-1
 google_adsense_page_level_ads: #Google Adsense Page Level Ads Code
