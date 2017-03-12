@@ -31,6 +31,7 @@ html
     meta(content="telephone=no", name="format-detection")
     meta(name="description", content=config.description)
     block title
+    != autoCanonical(config, page)
     link(rel='stylesheet', type='text/css', href=root + '/css/normalize.css')
     link(rel='stylesheet', type='text/css', href=root + '/css/very-simple.css')
     link(rel='stylesheet', type='text/css', href=root + '/css/solarized-dark.css')
